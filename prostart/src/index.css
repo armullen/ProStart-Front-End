@@ -1,12 +1,33 @@
+
+/* ....................globals................. */
 body {
   margin: 0;
   font-family: 'Times New Roman', Times, serif; 
   color: blue;
+  background-color: whitesmoke;
 }
 
+
+/* ......................header......................... */
 nav {
   display: flex;
-  justify-content: space-around;
-  font-size: 30px;
+  justify-content: right;
+  margin: 0;
+  font-size: 20px;
+}
+
+.banner{
+  background-color: lightgrey;
+  height: 50px;
+  display: flex;
+}
+.bannerlinks{
+  font-size: 25px;
+}
+
+.header{
+  background-color: orange;
+  height: 100px;
+
 }
 
