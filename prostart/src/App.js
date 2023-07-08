@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Calendar from './pages/Calendar';
 import Facilities from './pages/Facilities';
 import OurStaff from './pages/OurStaff';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -34,7 +35,12 @@ function App() {
           <Route path= '' element={<OurStaff />} />
         </Route>
 
+  {/* .................contact us routes.......... */}
+        <Route path='/contactus'>
+          <Route path='' element={<ContactUs />} />
+        </Route>
 
+{/* .................................................. */}
       </Routes>
       <Footer />
     </div>

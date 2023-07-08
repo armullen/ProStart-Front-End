@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
+
 function Footer () {
     return (
-        <div className='socials'>
-            <h3>Connect with us!</h3>            
+        <div className='socials'> 
+            <Link to='/contactus'>Connect with us!</Link>           
         </div> 
     )
 }
