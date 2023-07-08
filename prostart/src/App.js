@@ -1,8 +1,9 @@
-import './App.css';
+import './index.css';
 import { Route, Routes } from 'react-router-dom';
 
 // ......components........
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 // ......pages.......
@@ -35,6 +36,7 @@ function App() {
 
 
       </Routes>
+      <Footer />
     </div>
   );
 }
