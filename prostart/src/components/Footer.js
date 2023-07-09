@@ -5,7 +5,7 @@ function Footer () {
         <div className='socials'> 
             <Link to='/contactus'>Connect with us!</Link>
             <h4>Copyright 2023 ProStart</h4>
-            <h4>Need a website?</h4>           
+            <h6>Website built by Amber</h6>           
         </div> 
     )
 }

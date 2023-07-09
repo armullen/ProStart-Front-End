@@ -16,13 +16,10 @@ nav {
   font-size: 20px;
 }
 
-.banner{
+.mb-2{
   background-color: lightgrey;
   height: 50px;
   display: flex;
-}
-.bannerlinks{
-  font-size: 25px;
 }
 
 .header{

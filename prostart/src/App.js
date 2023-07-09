@@ -1,5 +1,6 @@
-import './index.css';
 import { Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 // ......components........
 import Header from './components/Header';
@@ -27,17 +28,17 @@ function App() {
 
   {/* ............calendar routes................. */}
         <Route path='/calendar'>
-          <Route path= '' element={<Calendar />} />
+          <Route path='' element={<Calendar />} />
         </Route>
 
   {/* .............facilities routes.............. */}
         <Route path='/facilities'>
-          <Route path= '' element={<Facilities />} />
+          <Route path='' element={<Facilities />} />
         </Route>
 
   {/* ...............our staff routes............. */}
         <Route path='/ourstaff'>
-          <Route path= '' element={<OurStaff />} />
+          <Route path='' element={<OurStaff />} />
         </Route>
 
   {/* .................contact us routes.......... */}
