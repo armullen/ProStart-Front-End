@@ -16,6 +16,9 @@ import OurStaff from './pages/OurStaff';
 import ContactUs from './pages/ContactUs';
 import Login from './pages/Login';
 import SignUp from './pages/Signup';
+import Hockey from './pages/Hockey';
+import Camps from './pages/Camps';
+import Photos from './pages/Photos';
 
 
 function App() {
@@ -52,7 +55,27 @@ function App() {
         <Route path='/signup'>
           <Route path='' element={<SignUp />} />
         </Route>
+
+{/*...................hockey routes.............. */}
+
+        <Route path='/hockey'>
+          <Route path='' element={<Hockey />} />
+        </Route>
+
+{/* ..................camps routes................ */}
+
+        <Route path='/camps'>
+          <Route path='' element={<Camps />} />
+        </Route>
+
+{/* .....................photos routes................. */}
+
+        <Route path='/photos'>
+          <Route path='' element={<Photos />} />
+        </Route>
+
 {/* .................................................. */}
+
       </Routes>
       <Footer />
     </div>

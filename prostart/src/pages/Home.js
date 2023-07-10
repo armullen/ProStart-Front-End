@@ -1,7 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function Home () {
     return(
@@ -31,7 +34,19 @@ function Home () {
                 </Col>
             </Row> 
             <Row>
-                <Col>SUBSCRIBE TO OUR NEWSLETTER</Col>
+                <Col>
+                <InputGroup className="mb-3">
+                    <Card>
+                        <h4>Sign up for our Newsletter!</h4>
+                        <Form.Control
+                            placeholder="email"
+                            aria-label="email"
+                            aria-describedby="basic-addon2"/>
+                        <Button variant="outline-secondary" id="button-addon2">Sign Up
+                        </Button>
+                    </Card>
+                </InputGroup>
+                </Col>
                 <Col>UPCOMING EVENTS</Col>
             </Row>
         </Container>
