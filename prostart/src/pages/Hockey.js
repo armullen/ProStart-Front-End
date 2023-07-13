@@ -9,7 +9,7 @@ function Hockey () {
                 <Row>
                     
                     <Col>Hockey page</Col>
-                    <Col>Open Ice Times</Col>
+                    <Col>Open Sythetic Ice Times</Col>
                  
                 </Row>
                 <Row>
