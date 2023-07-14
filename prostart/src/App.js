@@ -19,6 +19,7 @@ import SignUp from './pages/Signup';
 import Hockey from './pages/Hockey';
 import Camps from './pages/Camps';
 import Photos from './pages/Photos';
+import Profile from './pages/Profile';
 
 
 function App() {
@@ -73,6 +74,13 @@ function App() {
         <Route path='/photos'>
           <Route path='' element={<Photos />} />
         </Route>
+
+
+{/* ...................profile routes..................... */}
+
+    <Route path='/profile'>
+        <Route path='' element={<Profile />} />
+    </Route>
 
 {/* .................................................. */}
 

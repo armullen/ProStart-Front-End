@@ -14,6 +14,9 @@ function Banner() {
                         <Button variant='outline-dark' size='sm'>
                             <Link to='/signup'>Sign Up</Link>
                         </Button>{' '}
+                        <Button variant='outline-dark' size='sm'>
+                            <Link to='/profile'>My Profile</Link>
+                        </Button>{' '}
                     </Card.Body>
                 </Card>
         </div>
