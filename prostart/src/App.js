@@ -19,7 +19,12 @@ import SignUp from './pages/Signup';
 import Hockey from './pages/Hockey';
 import Camps from './pages/Camps';
 import Photos from './pages/Photos';
+
 import Profile from './pages/Profile';
+import ProfileShow from './pages/ProfileShow';
+import ProfileEdit from './pages/ProfileEdit';
+import ProfileDelete from './pages/ProfileDelete';
+
 
 
 function App() {
@@ -80,6 +85,11 @@ function App() {
 
     <Route path='/profile'>
         <Route path='' element={<Profile />} />
+          <Route path= ':profileId'>
+            <Route path= '' element={<ProfileShow />} />
+            <Route path='delete' element={<ProfileDelete />} />
+            <Route path='edit' element={<ProfileEdit />} />
+          </Route>
     </Route>
 
 {/* .................................................. */}
