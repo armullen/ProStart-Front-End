@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 function Profile () {
+    let {id}= useParams();
     const [profiles, setProfile] = useState([]);
     const [profileForm, setProfileForm] = useState({
         name: "",
@@ -32,7 +33,7 @@ function Profile () {
                 {arr.map((profile, idx) => {
                     return(
                         <div key={idx}>
-                            <Link to={`/profile/${profile._id}`}>
+                            <Link to={`/profile/${profile.id}`}>
                             <h3>Name: {profile.name}</h3>
                             </Link>  
                             <h3>Athlete: {profile.athlete}</h3>  
