@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from 'react-router-dom'
 
 function Profile () {
-    let {id}= useParams();
+    // let {id}= useParams();
     const [profiles, setProfile] = useState([]);
     const [profileForm, setProfileForm] = useState({
         name: "",

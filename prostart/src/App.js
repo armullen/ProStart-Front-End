@@ -23,7 +23,7 @@ import Photos from './pages/Photos';
 import Profile from './pages/Profile';
 import ProfileShow from './pages/ProfileShow';
 import ProfileEdit from './pages/ProfileEdit';
-// import ProfileDelete from './pages/ProfileDelete';
+import ProfileDelete from './pages/ProfileDelete';
 
 
 
@@ -88,7 +88,7 @@ function App() {
           <Route path= ':profileId'>
             <Route path= '' element={<ProfileShow />} />
             <Route path='edit' element={<ProfileEdit />} />
-            {/* <Route path='delete' element={<ProfileDelete />} /> */}
+            <Route path='delete' element={<ProfileDelete />} />
           </Route>
       </Route>
 

@@ -8,7 +8,8 @@ function ProfileShow() {
 
     async function getProfile() {
         try {
-            let myProfile = await fetch (`http//localhost:8000/profile/${profileId}`);
+            // console.log(profileId)
+            let myProfile = await fetch (`http://localhost:8000/profile/${profileId}`);
             myProfile = await myProfile.json();
             setProfile(myProfile);
         } catch(err) {
