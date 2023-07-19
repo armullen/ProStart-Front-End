@@ -6,7 +6,7 @@ function OurStaff () {
 
     async function getStaff(){
         try {
-            let myStaff = await fetch('http://localhost:8000/ourstaff')
+            let myStaff = await fetch('https://prostart-6qnl.onrender.com/ourstaff')
             myStaff = await myStaff.json();
             setStaff(myStaff);
         } catch (err) {

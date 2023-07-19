@@ -9,7 +9,7 @@ function ProfileShow() {
     async function getProfile() {
         try {
             // console.log(profileId)
-            let myProfile = await fetch (`http://localhost:8000/profile/${profileId}`);
+            let myProfile = await fetch (`https://prostart-6qnl.onrender.com/profile/${profileId}`);
             myProfile = await myProfile.json();
             setProfile(myProfile);
         } catch(err) {

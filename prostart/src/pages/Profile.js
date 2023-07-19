@@ -13,7 +13,7 @@ function Profile () {
 
         async function getProfiles() {
             try {
-                let myProfiles = await fetch('http://localhost:8000/profile')
+                let myProfiles = await fetch('https://prostart-6qnl.onrender.com/profile')
                 myProfiles = await myProfiles.json();
                 setProfile(myProfiles);
             }catch (err) {
@@ -57,7 +57,7 @@ function Profile () {
     async function handleSubmit(e) {
         try {
             e.preventDefault();
-            await fetch('http://localhost:8000/profile/', {
+            await fetch('https://prostart-6qnl.onrender.com/profile/', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

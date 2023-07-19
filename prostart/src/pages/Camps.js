@@ -7,7 +7,7 @@ function Camps () {
 
         async function getCamp(){
             try {
-                let myCamp = await fetch('http://localhost:8000/camps')
+                let myCamp = await fetch('https://prostart-6qnl.onrender.com/camps')
                 myCamp = await myCamp.json();
                 console.log(myCamp)
                 setCamp(myCamp);

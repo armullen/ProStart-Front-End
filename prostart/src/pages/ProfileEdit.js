@@ -9,7 +9,7 @@ function ProfileEdit() {
 
     async function getProfile() {
         try {
-            let myProfile = await fetch(`http://localhost:8000/profile/${profileId}`);
+            let myProfile = await fetch(`https://prostart-6qnl.onrender.com/profile/${profileId}/`);
             myProfile = await myProfile.json();
             setProfile(myProfile);
         } catch(err) {
@@ -31,7 +31,7 @@ function ProfileEdit() {
     async function handleSubmit(e) {
         try{
             e.preventDefault();
-            await fetch(`http://localhost:8000/profile/${profileId}`, {
+            await fetch(`https://prostart-6qnl.onrender.com/profile/${profileId}/edit/`, {
                 method: 'PUT',
                 headers: {
                     "Content-Type": "application/json"

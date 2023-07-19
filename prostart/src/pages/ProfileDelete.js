@@ -6,7 +6,7 @@ function ProfileDelete() {
 
     async function deleteMyProfile() {
         try {
-             await fetch(`http://localhost:8000/profile/${profileId}`, {
+             await fetch(`https://prostart-6qnl.onrender.com/profile/${profileId}/delete/`, {
                 method: "DELETE",
                 headers: {
                     "Content-Type": "application/json"
